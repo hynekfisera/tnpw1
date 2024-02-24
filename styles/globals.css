@@ -1,0 +1,205 @@
+:root {
+  --primary: #342420;
+  --secondary: #5c3f38;
+  --tertiary: #a17065;
+  --bg-primary: #f2e9e4;
+  --bg-secondary: #f5f5f4;
+  --text-primary: #1c1917;
+  --text-secondary: #78716c;
+  --nav-text-primary: #ffffff;
+  --nav-text-secondary: #efefef;
+  --nav-text-visited: #dddddd;
+  --line: #c9ada7;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: Inter;
+  src: url("../assets/fonts/Inter.ttf");
+}
+
+body {
+  font-family: Inter, sans-serif;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+}
+
+.container-lg {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+header {
+  background-color: var(--primary);
+  color: var(--nav-text-primary);
+  padding: 1rem 0;
+}
+
+header > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header > div > div {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  gap: 1.5rem;
+}
+
+header nav ul li a {
+  font-size: 1.125rem;
+  color: var(--nav-text-secondary);
+  text-decoration: none;
+  transition: opacity 0.3s ease;
+}
+
+header nav ul li a:hover {
+  opacity: 0.7;
+}
+
+header nav ul li a:visited {
+  color: var(--nav-text-visited);
+}
+
+section.heading {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../assets/images/inside.webp");
+  padding: 6rem 0 10rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+section.heading h1 {
+  font-size: 3rem;
+  font-weight: 400;
+  color: var(--nav-text-primary);
+}
+
+section.heading p {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: var(--nav-text-secondary);
+}
+
+section.overlay {
+  margin-top: -4rem;
+  background-color: var(--bg-secondary);
+  padding: 4rem;
+  border-radius: 3rem;
+}
+
+section.overlay h2 {
+  font-size: 2rem;
+  font-weight: 500;
+  color: var(--tertiary);
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 4rem 0;
+  align-items: center;
+}
+
+footer > div:first-child {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+footer > div:first-child > div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+footer > div:first-child > div div:first-child {
+  color: var(--primary);
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+footer > div:first-child > div p {
+  color: var(--secondary);
+}
+
+footer > div:first-child > div div:last-child {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+}
+
+footer > div:first-child > div div:last-child a {
+  color: var(--primary);
+  font-size: 1.5rem;
+  transition: opacity 0.3s ease;
+}
+
+footer > div:first-child > div div:last-child a:hover {
+  opacity: 0.7;
+}
+
+footer nav ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+footer nav ul li {
+  text-align: right;
+}
+
+footer nav ul li a {
+  color: var(--primary);
+  text-decoration: none;
+  transition: opacity 0.3s ease;
+}
+
+footer nav ul li a:hover {
+  opacity: 0.7;
+}
+
+footer nav ul li a:visited {
+  color: var(--secondary);
+}
+
+footer > div:last-child {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+footer > div:last-child div {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+footer > div:last-child div:first-child p {
+  color: var(--primary);
+}
+
+footer > div:last-child div:last-child p {
+  color: var(--secondary);
+}

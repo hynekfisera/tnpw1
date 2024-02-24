@@ -1,0 +1,54 @@
+section.overlay {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+section.overlay > div:first-child {
+  border-right: 1px solid var(--line);
+  padding-right: 2rem;
+}
+
+section.overlay > div:last-child {
+  padding-left: 2rem;
+}
+
+.aktuality {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.aktuality > div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.aktuality > div > p {
+  color: var(--text-primary);
+  line-height: 1.5;
+  display: -webkit-box;
+  max-width: 100%;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.aktuality > div > div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.aktuality > div > div p {
+  font-weight: 500;
+  color: var(--text-secondary);
+}
+
+.aktuality > div > div a {
+  color: var(--secondary);
+  font-weight: 600;
+  text-decoration: none;
+}
