@@ -1,0 +1,21 @@
+.overlay {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.overlay > div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.overlay > div > h2 {
+  font-size: 1.25rem;
+  color: var(--text-secondary);
+}
+
+.overlay > div > p {
+  color: var(--text-primary);
+  line-height: 1.5;
+}

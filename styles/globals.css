@@ -16,6 +16,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 @font-face {
@@ -34,6 +35,11 @@ body {
   margin: 0 auto;
 }
 
+.container {
+  max-width: 768px;
+  margin: 0 auto;
+}
+
 header {
   background-color: var(--primary);
   color: var(--nav-text-primary);
@@ -46,30 +52,32 @@ header > div {
   align-items: center;
 }
 
-header > div > div {
+header > div > div > a {
+  color: var(--nav-text-primary);
+  text-decoration: none;
   font-size: 1.5rem;
   font-weight: 700;
 }
 
-header nav ul {
+.header-links {
   list-style: none;
   display: flex;
   flex-direction: row;
   gap: 1.5rem;
 }
 
-header nav ul li a {
+.header-links li a {
   font-size: 1.125rem;
   color: var(--nav-text-secondary);
   text-decoration: none;
   transition: opacity 0.3s ease;
 }
 
-header nav ul li a:hover {
+.header-links li a:hover {
   opacity: 0.7;
 }
 
-header nav ul li a:visited {
+.header-links li a:visited {
   color: var(--nav-text-visited);
 }
 
@@ -125,81 +133,81 @@ footer > div:first-child {
   justify-content: space-between;
 }
 
-footer > div:first-child > div {
+.footer-social {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
 }
 
-footer > div:first-child > div div:first-child {
+.footer-social div:first-child {
   color: var(--primary);
   font-size: 2rem;
   font-weight: 600;
 }
 
-footer > div:first-child > div p {
+.footer-social p {
   color: var(--secondary);
 }
 
-footer > div:first-child > div div:last-child {
+.footer-social div:last-child {
   display: flex;
   flex-direction: row;
   gap: 0.5rem;
 }
 
-footer > div:first-child > div div:last-child a {
+.footer-social div:last-child a {
   color: var(--primary);
   font-size: 1.5rem;
   transition: opacity 0.3s ease;
 }
 
-footer > div:first-child > div div:last-child a:hover {
+.footer-social div:last-child a:hover {
   opacity: 0.7;
 }
 
-footer nav ul {
+.footer-links {
   list-style: none;
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
 }
 
-footer nav ul li {
+.footer-links li {
   text-align: right;
 }
 
-footer nav ul li a {
+.footer-links li a {
   color: var(--primary);
   text-decoration: none;
   transition: opacity 0.3s ease;
 }
 
-footer nav ul li a:hover {
+.footer-links li a:hover {
   opacity: 0.7;
 }
 
-footer nav ul li a:visited {
+.footer-links li a:visited {
   color: var(--secondary);
 }
 
-footer > div:last-child {
+.footer-info {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 1rem;
 }
 
-footer > div:last-child div {
+.footer-info div {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   gap: 0.75rem;
 }
 
-footer > div:last-child div:first-child p {
+.footer-info div:first-child p {
   color: var(--primary);
 }
 
-footer > div:last-child div:last-child p {
+.footer-info div:last-child p {
   color: var(--secondary);
 }
