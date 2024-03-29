@@ -1,15 +1,7 @@
 .overlay {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-}
-
-.overlay > div:first-child {
-  border-right: 1px solid var(--line);
-  padding-right: 2rem;
-}
-
-.overlay > div:last-child {
-  padding-left: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
 
 .overlay > div:last-child p {
@@ -57,4 +49,27 @@
   color: var(--secondary);
   font-weight: 600;
   text-decoration: none;
+}
+
+@media (min-width: 1024px) {
+  .overlay {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0;
+  }
+
+  .overlay > div:first-child {
+    border-right: 1px solid var(--line);
+    padding-right: 2rem;
+  }
+
+  .overlay > div:last-child {
+    padding-left: 2rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  header {
+    padding: 1rem 0;
+  }
 }

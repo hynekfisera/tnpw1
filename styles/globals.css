@@ -108,7 +108,7 @@ header nav {
 
 section.heading {
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../assets/images/inside.webp");
-  padding: 6rem 0 10rem;
+  padding: 4rem 0 6rem;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -118,26 +118,26 @@ section.heading {
 }
 
 section.heading h1 {
-  font-size: 3rem;
+  font-size: 2.25rem;
   font-weight: 400;
   color: var(--nav-text-primary);
 }
 
 section.heading p {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   font-weight: 500;
   color: var(--nav-text-secondary);
 }
 
 section.overlay {
-  margin-top: -4rem;
+  margin-top: -2rem;
   background-color: var(--bg-secondary);
-  padding: 4rem;
-  border-radius: 3rem;
+  padding: 2rem;
+  border-radius: 0;
 }
 
 section.overlay h2 {
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: 500;
   color: var(--tertiary);
 }
@@ -252,10 +252,32 @@ footer > div:first-child {
     flex-direction: row;
     gap: 1.5rem;
   }
+
+  section.overlay h2 {
+    font-size: 2rem;
+  }
 }
 
 @media (min-width: 1280px) {
   header {
     padding: 1rem 0;
+  }
+
+  section.heading {
+    padding: 6rem 0 10rem;
+  }
+
+  section.heading h1 {
+    font-size: 3rem;
+  }
+
+  section.heading p {
+    font-size: 1.5rem;
+  }
+
+  section.overlay {
+    margin-top: -4rem;
+    padding: 4rem;
+    border-radius: 3rem;
   }
 }
