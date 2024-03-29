@@ -23,12 +23,15 @@
     <meta name="msapplication-TileColor" content="#5c3f38">
     <meta name="msapplication-config" content="assets/browserconfig.xml">
     <meta name="theme-color" content="#ffffff">
+    <script src="scripts/header.js"></script>
 </head>
 
 <body>
     <header>
         <div class="container-lg">
             <div><a href="index.html">Kavárna</a></div>
+            <button onclick="toggleVisibility()" aria-label="Zobrazit/skrýt menu"><i
+                    class="fa-solid fa-bars"></i></button>
             <nav>
                 <ul class="header-links">
                     <li><a href="index.html">Hlavní stránka</a></li>
@@ -84,6 +87,7 @@
             </div>
             <div>
                 <h2>Kde nás najdete?</h2>
+                <p>Adresa 12345, Hradec Králové 00<br>Otevírací doba: Po-Pá 8:00-18:00</p>
                 <div
                     style="text-decoration:none; overflow:hidden;max-width:100%;width:450px;height:250px;margin-top:1rem">
                     <div id="google-maps-display" style="height:100%; width:100%;max-width:100%;"><iframe

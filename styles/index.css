@@ -12,6 +12,12 @@
   padding-left: 2rem;
 }
 
+.overlay > div:last-child p {
+  color: var(--text-primary);
+  line-height: 1.5;
+  margin-top: 1rem;
+}
+
 .news {
   margin-top: 1rem;
   display: flex;

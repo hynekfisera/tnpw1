@@ -43,7 +43,7 @@ body {
 header {
   background-color: var(--primary);
   color: var(--nav-text-primary);
-  padding: 1rem 0;
+  padding: 1rem 2rem;
 }
 
 header > div {
@@ -59,10 +59,35 @@ header > div > div > a {
   font-weight: 700;
 }
 
+header button {
+  background-color: transparent;
+  border: none;
+  font-size: 1.75rem;
+  padding: 0.5rem;
+  margin: -0.5rem;
+  color: var(--nav-text-primary);
+  cursor: pointer;
+}
+
+header nav {
+  position: absolute;
+  top: 60px;
+  padding: 1rem 2rem 1.5rem;
+  left: 0;
+  right: 0;
+  background-color: var(--primary);
+  display: none;
+}
+
+.visible {
+  display: block;
+}
+
 .header-links {
   list-style: none;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  align-items: flex-end;
   gap: 1.5rem;
 }
 
@@ -210,4 +235,27 @@ footer > div:first-child {
 
 .footer-info div:last-child p {
   color: var(--secondary);
+}
+
+@media (min-width: 768px) {
+  header button {
+    display: none !important;
+  }
+
+  header nav {
+    position: static;
+    padding: 0;
+    display: flex;
+  }
+
+  .header-links {
+    flex-direction: row;
+    gap: 1.5rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  header {
+    padding: 1rem 0;
+  }
 }
