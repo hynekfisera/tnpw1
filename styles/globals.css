@@ -253,10 +253,6 @@ footer > div:first-child {
     gap: 1.5rem;
   }
 
-  section.overlay h2 {
-    font-size: 2rem;
-  }
-
   footer {
     padding: 4rem 0;
   }

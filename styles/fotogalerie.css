@@ -1,0 +1,53 @@
+.overlay {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    "photo-1 photo-2"
+    "photo-1 photo-2"
+    "photo-3 photo-3"
+    "photo-4 photo-5"
+    "photo-4 photo-5";
+}
+
+.photo-1 {
+  grid-area: photo-1;
+}
+
+.photo-2 {
+  grid-area: photo-2;
+}
+
+.photo-3 {
+  grid-area: photo-3;
+}
+
+.photo-4 {
+  grid-area: photo-4;
+}
+
+.photo-5 {
+  grid-area: photo-5;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 1rem;
+}
+
+@media (min-width: 768px) {
+  .overlay {
+    gap: 2rem;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+      "photo-1 photo-3 photo-3"
+      "photo-1 photo-4 photo-5"
+      "photo-2 photo-4 photo-5";
+  }
+
+  img {
+    border-radius: 2rem;
+  }
+}
