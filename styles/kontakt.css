@@ -38,7 +38,7 @@ textarea:focus {
   outline-color: var(--primary);
 }
 
-button {
+form button {
   background-color: var(--tertiary);
   color: #ffffff;
   font-size: 1rem;
@@ -51,7 +51,7 @@ button {
   transition: all 0.3s ease;
 }
 
-button:hover {
+form button:hover {
   background-color: var(--secondary);
 }
 
