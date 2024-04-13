@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt | Kavárna</title>
+    <meta name="description"
+        content="Navštivte naši kavárnu v Hradci Králové a ochutnejte naši kávu, čerstvé pečivo a domácí dezerty. Přijďte si odpočinout a relaxovat s námi." />
+    <!-- Při hodnocení projektu prosím ignorujte následující řádek -->
+    <meta name="robots" content="noindex,nofollow">
+    <link rel="stylesheet" href="styles/globals.css">
+    <link rel="stylesheet" href="styles/kontakt.css">
+    <link rel="stylesheet" href="assets/fontawesome/css/fontawesome.min.css">
+    <link rel="stylesheet" href="assets/fontawesome/css/solid.min.css">
+    <link rel="stylesheet" href="assets/fontawesome/css/brands.min.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
+    <link rel="manifest" href="assets/site.webmanifest">
+    <link rel="mask-icon" href="assets/safari-pinned-tab.svg" color="#5c3f38">
+    <link rel="shortcut icon" href="assets/favicon.ico">
+    <meta name="msapplication-TileColor" content="#5c3f38">
+    <meta name="msapplication-config" content="assets/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+    <script src="scripts/header.js"></script>
+    <script src="scripts/kontakt.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="container-lg">
+            <div><a href="index.html">Kavárna</a></div>
+            <button onclick="toggleVisibility()" aria-label="Zobrazit/skrýt menu"><i
+                    class="fa-solid fa-bars"></i></button>
+            <nav>
+                <ul class="header-links">
+                    <li><a href="index.html">Hlavní stránka</a></li>
+                    <li><a href="aktuality.html">Aktuality</a></li>
+                    <li><a href="nabidka.html">Nabídka</a></li>
+                    <li><a href="fotogalerie.html">Fotogalerie</a></li>
+                    <li><a href="kontakt.html">Kontakt</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="heading">
+            <h1>Aktuality</h1>
+        </section>
+        <section class="overlay container">
+            <h2>Napište nám</h2>
+            <form onsubmit="handleSubmit(event)">
+                <div>
+                    <label for="input-email">Váš email</label>
+                    <input type="email" id="input-email" name="email" required placeholder="email@example.com">
+                </div>
+                <div>
+                    <label for="input-subject">Předmět</label>
+                    <input type="text" id="input-subject" name="subject" required placeholder="Předmět zprávy">
+                </div>
+                <div>
+                    <label for="input-message">Obsah zprávy</label>
+                    <textarea id="input-message" name="message" required></textarea>
+                </div>
+                <button type="submit">Odeslat</button>
+            </form>
+            <div class="message">
+                <p>Děkujeme za vaši zprávu! Brzy se vám ozveme.</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div>
+            <div class="footer-social">
+                <div>Kavárna</div>
+                <p>Sledujte nás na sociálních sítích!</p>
+                <div>
+                    <a href="https://www.example.com/"><i class="fa-brands fa-facebook-square"></i></a>
+                    <a href="https://www.example.com/"><i class="fa-brands fa-twitter-square"></i></a>
+                    <a href="https://www.example.com/"><i class="fa-brands fa-instagram-square"></i></a>
+                </div>
+            </div>
+            <nav>
+                <ul class="footer-links">
+                    <li><a href="index.html">Hlavní stránka</a></li>
+                    <li><a href="aktuality.html">Aktuality</a></li>
+                    <li><a href="nabidka.html">Nabídka</a></li>
+                    <li><a href="fotogalerie.html">Fotogalerie</a></li>
+                    <li><a href="kontakt.html">Kontakt</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="footer-info">
+            <div>
+                <p>© Kavárna 2024</p>
+                <p>Datum poslední aktualizace: 24.2.2023</p>
+                <p>kavarna@example.com</p>
+            </div>
+            <div>
+                <p>Vytvořil Hynek Fišera</p>
+                <p>Zápočtový projekt TNPW1</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
