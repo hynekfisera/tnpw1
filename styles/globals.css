@@ -275,6 +275,10 @@ footer > div:first-child {
   .footer-info {
     font-size: 1rem;
   }
+
+  section.container {
+    border-radius: 3rem;
+  }
 }
 
 @media (min-width: 1280px) {
@@ -297,6 +301,9 @@ footer > div:first-child {
   section.overlay {
     margin-top: -4rem;
     padding: 4rem;
+  }
+
+  section.container-lg {
     border-radius: 3rem;
   }
 }
