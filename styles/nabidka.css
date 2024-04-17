@@ -18,30 +18,34 @@
   border: none;
 }
 
-dl {
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+tbody {
   display: flex;
   flex-direction: column;
   gap: 0.75rem;
   margin-top: 1rem;
 }
 
-dl > div {
+tr {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
 
-dt,
-dd {
+td {
   font-size: 1.125rem;
   font-weight: 500;
 }
 
-dt {
+td:first-child {
   color: var(--text-primary);
 }
 
-dd {
+td:last-child {
   color: var(--text-secondary);
   text-align: right;
 }
