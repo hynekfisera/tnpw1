@@ -39,7 +39,7 @@ textarea:focus {
 }
 
 form button {
-  background-color: var(--tertiary);
+  background-color: var(--secondary);
   color: #ffffff;
   font-size: 1rem;
   font-weight: 600;
@@ -52,7 +52,7 @@ form button {
 }
 
 form button:hover {
-  background-color: var(--secondary);
+  background-color: var(--tertiary);
 }
 
 .message {
